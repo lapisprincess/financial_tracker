@@ -1,0 +1,42 @@
+This is just a sample account file to test the formating of user info! 
+(it's outside of the users folder so it doesn't get all messed up hehe)
+
+Things an account needs:
+    - JOBS
+    - SUM
+    - PROJECTIONS
+    - PAYMENTS PER MONTH (PPM)
+
+The sequence "## " indicates where info starts.
+The sequence "--" indicates where reading should stop.
+Every entry is separated by line.
+Every key is matched with a value.
+    Keys and values separated by sequence " ; ".
+
+This section registers the various jobs.
+Format: "JOB NAME (string) ; JOB PAY (double)"
+## JOBS
+Research Institute ; 16.24
+CS Assistant ; 15.74
+--
+
+This section registers user's sum at various times.
+Format: "DATE (string) ; SUM (double)"
+Note: date is recorded as YYYY/MM/DD (0s included)
+## SUM
+2023/09/30 ; 53.03
+--
+
+
+This section is similar to SUM, but registers only future projections.
+Format: "CURR DATE (string) ; PROJECTED DATE (string) ; PROJECTED SUM (double)
+## PROJECTIONS
+2023/09/30 ; 2023/10/01 ; 53.03
+--
+
+This section's weird cause it just stores one atom of info,
+The frequency at which the user gets paid in the month
+Format: "PPM (int) ; PAYDAY (string (monday-sunday))"
+## PAYMENTS PER MONTH
+2 ; thursday
+--
