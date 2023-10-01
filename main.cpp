@@ -25,5 +25,20 @@ int main(int argc, char* argv[]) {
     stream.close();
 }
 
+#include <array>
+
+class Account {
+private:
+    string username;
+    
+    
+
+
+public:
+
+};
+
+
+
 
 
